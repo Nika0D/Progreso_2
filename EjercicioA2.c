@@ -11,14 +11,14 @@ int main()
     {
         for (int j = 0; j < m; j++)
         {
-            matrix[i][j]=0;
+            if (i==j)
+            {
+                matrix[i][j]=1;
+            }else{
+                matrix[i][j]=0;
+            }         
         } 
-    }
-    for (int i = 0; i < count; i++)
-    {
-        /* code */
-    }
-    
+    }    
     for (int i = 0; i < n; i++)
     {
         printf("\n");
